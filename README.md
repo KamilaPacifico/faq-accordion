@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/KamilaPacifico/NOME-DO-REPOSITORIO)
-- Live Site URL: [Add live site URL here](https://link-do-github-pages.com)
+- Solution URL: [https://github.com/KamilaPacifico/faq-accordion](https://github.com/KamilaPacifico/NOME-DO-REPOSITORIO)
+- Live Site URL: [https://kamilapacifico.github.io/faq-accordion/](https://kamilapacifico.github.io/faq-accordion/)
 
 ## My process
 
@@ -66,4 +66,4 @@ resposta.hidden = estaAberto;
 ## Author
 
 - GitHub - [@KamilaPacifico](https://github.com/KamilaPacifico)
-- Frontend Mentor - [@seuusuario](https://www.frontendmentor.io/profile/seuusuario)
+- Frontend Mentor - [@KamilaPacifico]https://www.frontendmentor.io/profile/KamilaPacifico
