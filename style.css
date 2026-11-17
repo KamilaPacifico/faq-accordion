@@ -1,0 +1,139 @@
+:root {
+  --cor-branco: hsl(0, 100%, 100%);
+  --cor-fundo-claro: hsl(275, 100%, 97%);
+  --cor-roxo-escuro: hsl(292, 42%, 14%);
+  --cor-roxo-texto: hsl(292, 16%, 49%);
+  --cor-roxo-vivo: #ad28eb;
+  --fonte: "Work Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+body {
+  background-color: var(--cor-fundo-claro);
+  font-family: var(--fonte);
+  font-size: 1rem;
+  min-height: 100vh;
+  padding: 10rem 1.5rem 2rem;
+  position: relative;
+}
+
+body::before {
+  background-color: var(--cor-roxo-escuro);
+  background-image: url("./assets/images/background-pattern-mobile.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  height: 18rem;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.faq {
+  background-color: var(--cor-branco);
+  border-radius: 1rem;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.08);
+  margin: 0 auto;
+  max-width: 37.5rem;
+  padding: 1.5rem;
+}
+
+.faq__title {
+  align-items: center;
+  color: var(--cor-roxo-escuro);
+  display: flex;
+  font-size: 2rem;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.faq__star {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.faq__item {
+  padding: 1.25rem 0;
+}
+
+.faq__item + .faq__item {
+  border-top: 1px solid var(--cor-fundo-claro);
+}
+
+.faq__button {
+  align-items: center;
+  background: none;
+  border: 0;
+  color: var(--cor-roxo-escuro);
+  cursor: pointer;
+  display: flex;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.faq__button:hover {
+  color: var(--cor-roxo-vivo);
+}
+
+.faq__button:focus-visible {
+  outline: 2px solid var(--cor-roxo-vivo);
+  outline-offset: 4px;
+}
+
+.faq__icon {
+  flex-shrink: 0;
+  height: 1.875rem;
+  width: 1.875rem;
+}
+
+.faq__answer {
+  color: var(--cor-roxo-texto);
+  line-height: 1.5;
+  padding-top: 1rem;
+}
+
+/* Telas maiores (tablet e desktop) */
+@media (min-width: 48rem) {
+  body::before {
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+  }
+
+  .faq {
+    padding: 2rem 2.5rem;
+  }
+
+  .faq__title {
+    font-size: 3.5rem;
+    gap: 1.5rem;
+  }
+
+  .faq__star {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .faq__button {
+    font-size: 1.125rem;
+  }
+}
